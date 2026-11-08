@@ -23,6 +23,19 @@ Perfect for:
 | Slide Switch | Built-in | Fast/Slow response time toggle |
 | Buttons | Left/Right (built-in) | ±3 dB scale offset adjustment |
 
+### Power & Setup
+
+**Reference & Documentation:**
+- [Adafruit Circuit Playground Express - Learning Guide](https://learn.adafruit.com/adafruit-circuit-playground-express)
+
+**Power Options:**
+- **Option 1**: 3× AA batteries (LR6) via external battery coupler (3.5–4.5V DC)
+  - Recommended for portability and long-term operation
+  - Connect to JST connector on Circuit Playground M0
+- **Option 2**: USB rechargeable battery pack
+  - Connect via micro-USB port
+  - Supports firmware upload and serial monitoring simultaneously
+
 ## Features
 
 ✅ **Real-time Acoustic Visualization**
