@@ -55,8 +55,8 @@ This color scale is identical to the one used in **d&b ArrayCalc**, ensuring vis
 
 | LED # | Color | dB Range | Meaning |
 |-------|-------|----------|---------|
-| 0 | Violet | 0-3 | Threshold |
-| 1 | Violet | 3-6 | Faint |
+| 0 | Violet (Dark) | 0-3 | Threshold |
+| 1 | Violet (Bright) | 3-6 | Faint |
 | 2 | Blue (Dark) | 6-9 | Quiet |
 | 3 | Blue (Bright) | 9-12 | Moderate |
 | 4 | Green (Dark) | 12-15 | Medium |
@@ -74,7 +74,9 @@ This color scale is identical to the one used in **d&b ArrayCalc**, ensuring vis
 
 - Power on or reset the device
 - Keep **silent** while calibration runs (1 second)
-- LEDs turn blue during calibration
+- **3 blue flashes** → Calibration starting
+- **Silence** → Acoustic measurement in progress (LEDs off = no EM interference)
+- **2 blue flashes** → Calibration complete ✓
 - Serial monitor displays: `Calibration post-filtre terminee. Niveau SPL de base: XX.XX`
 
 ### 2. **Basic Operation**
