@@ -151,11 +151,19 @@ void calibrateOnBoot() {
 
   Serial.println("Calibration du bruit de fond... Ne faites pas de bruit.");
 
-  for(int i=0; i<10; i++) CircuitPlayground.setPixelColor(i, 0, 0, 100);
-
+  // 3 flashs bleus au début
+  for(int i=0; i<3; i++) {
+    for(int j=0; j<10; j++) CircuitPlayground.setPixelColor(j, 0, 0, 100);
+    delay(100);
+    CircuitPlayground.clearPixels();
+    delay(100);
+  }
+  
+  delay(50);  // Stabilisation avant calibration
+  
   float sum_magnitude = 0.0;
 
-  int sample_count = 1000; 
+  int sample_count = 1000;
 
   for (int i = 0; i < sample_count; i++) {
 
@@ -183,7 +191,13 @@ void calibrateOnBoot() {
 
   Serial.println(reference_level);
 
-  CircuitPlayground.clearPixels();
+  // 2 flashs bleus à la fin
+  for(int i=0; i<2; i++) {
+    for(int j=0; j<10; j++) CircuitPlayground.setPixelColor(j, 0, 0, 100);
+    delay(100);
+    CircuitPlayground.clearPixels();
+    delay(100);
+  }
 
 }
 

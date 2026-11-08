@@ -73,9 +73,9 @@ This color scale is identical to the one used in **d&b ArrayCalc**, ensuring vis
 ### 1. **Calibration**
 
 - Power on or reset the device
-- Keep **silent** while calibration runs (1 second)
 - **3 blue flashes** → Calibration starting
 - **Silence** → Acoustic measurement in progress (LEDs off = no EM interference)
+- Keep **silent** while calibration runs (1 second)
 - **2 blue flashes** → Calibration complete ✓
 - Serial monitor displays: `Calibration post-filtre terminee. Niveau SPL de base: XX.XX`
 
